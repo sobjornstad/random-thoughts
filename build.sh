@@ -5,13 +5,18 @@ tempfile="/tmp/rt-public.txt"
 target="$(dirname "$0")/index.html"
 
 rtgrep -p '.*' "$sourcefile" >"$tempfile"
-vim -E \
+vim \
+    -E \
     -c "let g:html_no_progress=1" \
     -c "set background=light" \
+    -c "colorscheme solarized" \
     -c "set ft=randomthoughts" \
     -c "runtime syntax/2html.vim" \
     -c "wqa" \
     "$tempfile"
+# horrendous hack to fix Vim using a bogus set of colors for no discernible or fixable reason
+patch -u index.html fix-colorscheme.diff
+rm -f index.html.orig
 
 python3 -c "
 from bs4 import BeautifulSoup

@@ -1,0 +1,25 @@
+@@ -12,16 +12,16 @@
+   <meta content="solarized" name="colorscheme"/>
+   <style>
+    <!--
++pre { white-space: pre-wrap; font-family: monospace; color: #585858; background-color: #ffffd7; }
++body { font-family: monospace; color: #585858; background-color: #ffffd7; }
+-pre { white-space: pre-wrap; font-family: monospace; color: #ffff00; background-color: #ffffff; }
+-body { font-family: monospace; color: #ffff00; background-color: #ffffff; }
+ * { font-size: 1em; }
++.Identifier { color: #0087ff; }
++.PreProc { color: #d75f00; }
++.Statement { color: #5f8700; }
+-.Underlined { color: #ff40ff; }
+-.Identifier { color: #0000c0; }
+-.Constant { color: #008080; }
+-.Comment { color: #00ffff; }
+ .Formatted { font-weight: bold; }
++.Comment { color: #8a8a8a; }
++.Constant { color: #00afaf; }
++.Underlined { color: #5f5faf; }
+-.Statement { color: #008000; }
+-.PreProc { color: #ff6060; }
+ -->
+   </style>
+  </head>
