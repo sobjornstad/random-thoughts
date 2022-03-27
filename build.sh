@@ -14,9 +14,6 @@ vim \
     -c "runtime syntax/2html.vim" \
     -c "wqa" \
     "$tempfile"
-# horrendous hack to fix Vim using a bogus set of colors for no discernible or fixable reason
-patch -u index.html fix-colorscheme.diff
-rm -f index.html.orig
 
 python3 -c "
 from bs4 import BeautifulSoup
@@ -34,5 +31,9 @@ for tag in entry_number_tags:
 with open('$target', 'w') as f:
     f.write(bs.prettify())
 "
+
+# horrendous hack to fix Vim using a bogus set of colors for no discernible or fixable reason
+patch -u index.html fix-colorscheme.diff
+rm -f index.html.orig
 
 rm -- "${tempfile:?eek}"
