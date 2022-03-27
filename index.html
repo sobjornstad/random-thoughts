@@ -14749,7 +14749,7 @@ It's very rare that someone manages to write a one-sentence review that sums up 
 <span class="PreProc" id="10674">@10674.</span> There is a strange way in which working at a computer or another digital device is both impoverished (sensory impressions are highly limited -- see <span class="Statement">#7475</span> -- and novelty arrives in mostly predictable ways, with little true serendipity) and extremely eclectic and scatterbrained. Neither of these things happens in the way you would want them to -- you still have trouble concentrating, and you don't get the creative effects of novelty for the most part. I don't know if there are design principles or actions that could be used to improve this state of affairs, but it's worth thinking about.
 <span class="Statement">{BL #11002}</span>
 
-<span class="PreProc" id="10675">@10675.</span> A static HTML file on my local computer apparently gets a grade of C+ from DuckDuckGo's privacy tracker. &gt;<span class="Formatted">__</span>&lt;
+<span class="PreProc" id="10676">@10676.</span> A static HTML file on my local computer apparently gets a grade of C+ from DuckDuckGo's privacy tracker. &gt;<span class="Formatted">__</span>&lt;
 
 <span class="PreProc" id="10677">@10677.</span> "[G]enerally speaking, it's a good idea to know what sentences mean before you use them on national television. Although that appears to be optional these days." <span class="Underlined">--Lowering the Bar</span>
 
@@ -15140,15 +15140,6 @@ I understand what this is saying, but none of the words mean that!
 <span class="PreProc" id="10889">@10889.</span> "I like thinking about songs being haunted, and how some songs just keep getting repeated and rearranged over the years, and the people that sing them throughout their lives kind of follow those tunes around and loom over the people that sing them. In a happy way. In a Mandolin-jovial way." <span class="Underlined">--Andrew Marlin, on "Old Ties and Companions"</span>
 (<a href="https://www.youtube.com/watch?v=EdP8S0uKP5U)">https://www.youtube.com/watch?v=EdP8S0uKP5U)</a>
 
-<span class="PreProc" id="10894">@10894.</span>
-I was eating popcorn in front of the TV and dropped a piece. When it should have hit the ground, I heard a faint "pop" noise. My mom was a stickler about messes, so I looked all over, under the couch, under the TV stand, everywhere, and couldn't find that popcorn.
-
-About a year later, I'm watching TV again, and I hear the same faint "pop". I look down, and right between my feet, is a freshly popped kernel of popcorn. I picked it up, and it was still warm. I'd been sitting there for at least an hour, and there was nobody else in the room.
-
-Quantum popcorn.
-<span class="Underlined">--Reddit comment</span>
-
-<span class="Identifier">January 22, 2020</span>
 <span class="PreProc" id="10894">@10894.</span> "I think it looks very laconic in the such way." <span class="Underlined">--StackOverflow answer, describing a concise solution to a coding problem</span>
 
 <span class="PreProc" id="10895">@10895.</span>
@@ -15889,27 +15880,27 @@ notmuch dump | awk -F '--' '$1 ~/\+/ { print $1 }' | tr ' ' '\n' | sort -u
 <span class="PreProc" id="11318">@11318.</span>
 <span class="Constant">@@@</span>
 <span class="Constant">public String getResultString(int numResults) {</span>
-<span class="Constant">    StringBuffer sb = null;</span>
+<span class="Constant">  StringBuffer sb = null;</span>
 
-    for (int result[] = getResults(numResults); numResults-- &gt; 0;) {
-        int i = result[numResults];
-        if( i == 0){
-            int j = i + 1;
-            if (sb == null)
-                sb = new StringBuffer();
-            else
-                sb.append(",");
-                sb.append(j);
-        }else{
-            int j = i + 1;
-            if (sb == null)
-                sb = new StringBuffer();
-            else
-                sb.append(",");
-                sb.append(j);
-        }
+  for (int result[] = getResults(numResults); numResults-- &gt; 0;) {
+    int i = result[numResults];
+    if( i == 0){
+      int j = i + 1;
+      if (sb == null)
+        sb = new StringBuffer();
+      else
+        sb.append(",");
+        sb.append(j);
+    }else{
+      int j = i + 1;
+      if (sb == null)
+        sb = new StringBuffer();
+      else
+        sb.append(",");
+        sb.append(j);
     }
-    return sb.toString();
+  }
+  return sb.toString();
 }
 <span class="Constant">@@@</span>
 <span class="Constant">--The Daily WTF</span>
@@ -17269,7 +17260,7 @@ Maybe people regularly require the amount of ketchup in three or five packets, s
 
 <span class="PreProc" id="12037">@12037.</span> Alexander von Humboldt on the stages of scientific discovery: first people deny that it is true, then people deny that it is important, finally they credit the wrong person.
 
-<span class="PreProc" id="12038">@12038.</span> "Perhaps uniquely among human beings, the younger [J.B.S.] Haldane found World War I 'a very enjoyable experience' and freely admitted that he 'enjoyed the opportunity of killing people.'" <span class="Underlined">--Bill Bryson, _A Short History of Nearly Everything, p. 244</span>
+<span class="PreProc" id="12038">@12038.</span> "Perhaps uniquely among human beings, the younger [J.B.S.] Haldane found World War I 'a very enjoyable experience' and freely admitted that he 'enjoyed the opportunity of killing people.'" <span class="Underlined">--Bill Bryson, _A Short History of Nearly Everything_, p. 244</span>
 
 <span class="PreProc" id="12039">@12039.</span> "In this book probability is principally a branch of applied skepticism, not an engineering discipline." <span class="Underlined">--_Fooled by Randomness_, Nassim Nicholas Taleb, p. xii</span>
 
@@ -17661,7 +17652,7 @@ When an enterprise procurement office buys software, the question is "is there a
 <span class="PreProc" id="12256">@12256.</span>
 According to the story I heard, the CEO found her poking around in the supply closet and asked if he could help her find anything.
 
-‘Where do we keep the URLs?’ she asked. When he asked what she meant, she said, ‘I’m meeting with a prospective client in ten minutes who doesn’t know our work. They asked me to bring some URLs to the meeting.’
+'Where do we keep the URLs?' she asked. When he asked what she meant, she said, 'I'm meeting with a prospective client in ten minutes who doesn't know our work. They asked me to bring some URLs to the meeting.'
 <span class="Underlined">--<a href="https://www.askamanager.org/2021/10/the-controversial-calculator-the-highlighter-war-and-other-drama-over-office-supplies.html">https://www.askamanager.org/2021/10/the-controversial-calculator-the-highlighter-war-and-other-drama-over-office-supplies.html</a></span>
 
 <span class="PreProc" id="12257">@12257.</span> "I have had mostly negative experiences with encrypted emails, including receiving 5+ private keys of security researchers." <span class="Underlined">--Patrick McKenzie</span>
@@ -17679,6 +17670,60 @@ According to the story I heard, the CEO found her poking around in the supply cl
 <span class="PreProc" id="12268">@12268.</span> "I know, someone is going to write in and say the problem isn't in konsole, it's in the settings for the KooKooFont 3.7.1 package, and I can easily fix this by adding, removing, or adjusting the appropriate directives in /usr/share/config/fontk/config/fontulator-compat.d/04-spatulation, and... I don't care, gnome-terminal works and konsole doesn't." <span class="Underlined">--Mark Dominus</span>
 
 <span class="PreProc" id="12269">@12269.</span> "While all this was going on I was looking for a workaround. Finding one is at least as important as actually tracking down the problem because ultimately I am paid to do something other than figure out why Perl is losing TMPDIR." <span class="Underlined">--Mark Dominus</span>
+
+<span class="PreProc" id="12271">@12271.</span> "India said on Friday it accidentally fired a missile into Pakistan because of a 'technical malfunction' during routine maintenance."
+<span class="Underlined">--<a href="https://www.reuters.com/world/asia-pacific/india-says-it-accidentally-fired-missile-into-pakistan-2022-03-11/">https://www.reuters.com/world/asia-pacific/india-says-it-accidentally-fired-missile-into-pakistan-2022-03-11/</a></span>
+
+Gotta say, if I had to bet on the proximate cause of a nuclear war, it might be a technical malfunction!
+
+<span class="PreProc" id="12274">@12274.</span> On <span class="Formatted">_Mother Night_</span>: I think the reason Campbell is so good at propaganda is that he tells himself he's not really doing it, he doesn't really believe in it...which means that he doesn't have any doubts about it and he's free to caricature the Nazi position as far as he wants. Which is exactly what you want in propaganda! And it also means he's being a better Nazi than the Nazis (and worse than them in terms of effect, balanced to whatever extent it is by his role as a spy). This is somewhat like how real life can be stranger than fiction, as it doesn't have to come across as believable.
+
+<span class="PreProc" id="12275">@12275.</span> Remembering an anecdote I heard where someone went years having never heard of the train "The City of New Orleans" and just thought the Guthrie song was just a really cool extended metaphor for the city.
+
+<span class="PreProc" id="12279">@12279.</span> "If U.S. roads were a war zone, they would be the most dangerous battlefield the American military has ever encountered. Seriously: Annual U.S. highway fatalities outnumber the yearly war dead during each Vietnam, Korea, Iraq, Afghanistan, the War of 1812, and the American Revolution. When all of the injuries from car wrecks are also taken into account, one year of American driving is more dangerous than all those wars put together." <span class="Underlined">--<a href="https://www.theatlantic.com/business/archive/2016/04/absurd-primacy-of-the-car-in-american-life/476346/">https://www.theatlantic.com/business/archive/2016/04/absurd-primacy-of-the-car-in-american-life/476346/</a></span>
+
+<span class="Identifier">March 15, 2022</span>
+<span class="PreProc" id="12280">@12280.</span> "Growth in a car-dependent neighborhood is a bad party. Every new arrival makes things a little worse for the people who were already there. Growth in a traditional, walkable neighborhood is a good party. Every new arrival makes things better and more interesting for those who were already there." <span class="Underlined">--<a href="https://www.strongtowns.org/journal/2020/1/22/can-we-afford-to-care-about-design-in-a-housing-crisis">https://www.strongtowns.org/journal/2020/1/22/can-we-afford-to-care-about-design-in-a-housing-crisis</a></span>
+
+<span class="PreProc" id="12283">@12283.</span> Apparently a bill to make summer time permanent in 2023 passed the US Senate today -- <span class="Formatted">*unanimously*</span>. I'm still not sure I read this correctly given the amount of bickering that's been happening over this for the past 10 years.
+Still unclear if the House is going to take it up, but if it passed one chamber unanimously, I guess I'd be kind of surprised if they don't sooner or later.
+
+<span class="PreProc" id="12284">@12284.</span> "I am in favor of permanent standard time, but failing that, I am super happy with permanent daylight-saving time. Far more important to me is ridding ourselves of the twice-annual insanity of changing clocks. I'd be okay with adopting UTC if that meant our clocks never changed again." <span class="Underlined">--Hacker News comment on the above</span>
+
+<span class="PreProc" id="12285">@12285.</span> "Argue with idiots, and you become an idiot." <span class="Underlined">--Paul Graham, <a href="http://www.paulgraham.com/say.html">http://www.paulgraham.com/say.html</a></span>
+
+<span class="PreProc" id="12286">@12286.</span> The most dangerous way to lose time is not to spend it having fun, but to spend it doing fake work. When you spend time having fun, you know you're being self-indulgent. Alarms start to go off fairly quickly. If I woke up one morning and sat down on the sofa and watched TV all day, I'd feel like something was terribly wrong. Just thinking about it makes me wince. I'd start to feel uncomfortable after sitting on a sofa watching TV for 2 hours, let alone a whole day.
+
+And yet I've definitely had days when I might as well have sat in front of a TV all day -- days at the end of which, if I asked myself what I got done that day, the answer would have been: basically, nothing. I feel bad after these days too, but nothing like as bad as I'd feel if I spent the whole day on the sofa watching TV. If I spent a whole day watching TV I'd feel like I was descending into perdition. But the same alarms don't go off on the days when I get nothing done, because I'm doing stuff that seems, superficially, like real work.
+<span class="Underlined">--<a href="http://www.paulgraham.com/selfindulgence.html">http://www.paulgraham.com/selfindulgence.html</a></span>
+
+<span class="PreProc" id="12287">@12287.</span> "While the filesystem developers tend to be helpful and they write up informative responses, most people probably don't keep up with the past 6-8 years of [the Linux kernel mailing list]." <span class="Underlined">--<a href="https://danluu.com/deconstruct-files/">https://danluu.com/deconstruct-files/</a></span>
+
+<span class="PreProc" id="12292">@12292.</span> Fun thought from Huberman: Urine is literally just filtered blood.
+
+<span class="PreProc" id="12293">@12293.</span> At the back of the sanctuary at Bethlehem Lutheran, there's a box of hearing-aid devices labeled "Hearing-Assisted Boxes." Better make sure those boxes can hear.
+
+<span class="PreProc" id="12296">@12296.</span> "Good spirituals, but there's not enough counterpoint." <span class="Underlined">--William Dawson to André Thomas, at a choral convention</span>
+
+<span class="Identifier">March 19, 2022</span>
+<span class="PreProc" id="12297">@12297.</span> A few stories from Sigrid Johnson's memorial service.
+
+<span class="PreProc" id="12298">@12298.</span> Sig is 3, sitting in the back seat of their car between her two older brothers, going across the Missouri River. Sig suddenly jumps up from her seat and yells, "Drive 25, Daddy! That's B flat!" (Evidently the tires on the bridge were making a perfectly tuned note.)
+
+<span class="PreProc" id="12299">@12299.</span> Sig on her profession: "The only thing two choir directors can agree on is the inadequacy of a third."
+
+<span class="PreProc" id="12300">@12300.</span> Facebook memorial comment: "Sig was a force of nature."
+
+<span class="PreProc" id="12302">@12302.</span> Apparently SMA and Sig had a yearly contest to see who could make the fewest mistakes at Christmas Festival in seating the choirs, conducting the audience, etc.
+
+<span class="PreProc" id="12306">@12306.</span> "When encountering a new concept (a definition, a theorem) memorization is more important than understanding. Yes, you can spend time trying to crack the meaning, but you won't unless you spend enough time contemplating examples and trying to imagine counter-examples. It's a struggle. A more efficient way of gaining understanding is, first, to have things you do not (yet) fully understand memorized to the letter, and then use this to do exercises and solve problems. Only then you can more or less fully appreciate the concept, its raison d'être, and why it is formulated the way it is; no amount of explaining on the part of the instructor can be as helpful as your own practice actually using the thing."
+<span class="Underlined">--Hacker News comment, on "In Praise of Memorization" (<a href="https://news.ycombinator.com/item?id=30763003)">https://news.ycombinator.com/item?id=30763003)</a></span>
+
+(The comment thread here is fantastic.)
+
+<span class="PreProc" id="12307">@12307.</span> "Workshop-trained writers are often, not always, but often, intrinsically defensive. This single fact explains almost all defining features of contemporary literature. What you're looking at on the shelf are not so much books as battlements." <span class="Underlined">--Erik Hoel, "How the MFA swallowed literature"</span>
+
+<span class="PreProc" id="12310">@12310.</span> "[M]ost people just don't care or think about your temporary struggles nearly as much as you might imagine they do. The vast majority of customers care about you delivering a great service at a reasonable price above all else. The vast majority of prospective employees care about whether they can see themselves at your company, not how others couldn't. But you just can't appreciate such axioms in the midst of trouble. So you should take care to appreciate them when it's become clear that they are true." <span class="Underlined">--David Heinemeier Hansson, on the social media kerfuffle over Basecamp's new politics-at-work policy last year</span>
 
 </pre>
  </body>
