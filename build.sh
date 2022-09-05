@@ -33,7 +33,10 @@ with open('$target', 'w') as f:
 "
 
 # horrendous hack to fix Vim using a bogus set of colors for no discernible or fixable reason
-patch -u index.html fix-colorscheme.diff
-rm -f index.html.orig
+#patch -u index.html fix-colorscheme.diff
+#rm -f index.html.orig
+git add -p index.html || { echo "Canceling"; exit 1 }
+git commit -am "update"
+echo "If all looks good, run 'git push'."
 
 rm -- "${tempfile:?eek}"
