@@ -36,7 +36,8 @@ with open('$target', 'w') as f:
 #patch -u index.html fix-colorscheme.diff
 #rm -f index.html.orig
 git add -p index.html || { echo "Canceling"; exit 1; }
-git commit -m "update"
+git commit -m "update" || { echo "Commit canceled, stopping"; exit 1; }
+git restore index.html
 echo "If all looks good, run 'git push'."
 
 rm -- "${tempfile:?eek}"
