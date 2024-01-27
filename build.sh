@@ -15,22 +15,7 @@ vim \
     -c "wqa" \
     "$tempfile"
 
-python3 -c "
-from bs4 import BeautifulSoup
-
-with open('$tempfile.html') as f:
-    bs = BeautifulSoup(f.read(), features='html5lib')
-
-bs.find('title').string = 'Random Thoughts – Soren Bjornstad'
-
-entry_number_tags = bs.find_all('span', class_='PreProc')
-for tag in entry_number_tags:
-    this_id = tag.string.strip('@').strip('.')
-    tag.attrs['id'] = this_id
-
-with open('$target', 'w') as f:
-    f.write(bs.prettify())
-"
+python "$(dirname "$0")/linkify.py" "$tempfile.html" "$target" || { echo "Linkify failed, stopping"; exit 1; }
 
 # horrendous hack to fix Vim using a bogus set of colors for no discernible or fixable reason
 #patch -u index.html fix-colorscheme.diff
