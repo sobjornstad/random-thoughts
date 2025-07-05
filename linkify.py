@@ -4,7 +4,7 @@ import sys
 
 from bs4 import BeautifulSoup
 
-ZETTELKASTEN_URL = 'https://zettelkasten.sorenbjornstad.com/'
+ZETTELKASTEN_URL = 'https://mosmu.se/'
 
 if len(sys.argv) < 3:
     print("Usage: python3 tmp.py <source file> <target file>")
