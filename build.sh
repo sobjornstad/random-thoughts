@@ -22,7 +22,9 @@ python "$(dirname "$0")/linkify.py" "$tempfile.html" "$target" || { echo "Linkif
 #rm -f index.html.orig
 git add -p index.html || { echo "Canceling"; exit 1; }
 git commit -m "update" || { echo "Commit canceled, stopping"; exit 1; }
+# HEAD is detached in this colocated jj repo, so git commit doesn't advance master
+jj bookmark set master -r "$(git rev-parse HEAD)" || { echo "Moving master bookmark failed, stopping"; exit 1; }
 git restore index.html
-echo "If all looks good, run 'git push'."
+echo "If all looks good, run 'jj git push' (signs the commit; plain git push is rejected)."
 
 rm -- "${tempfile:?eek}"
